@@ -25,7 +25,7 @@ def man_files(pattern):
 
 def config_files():
     if not is_windows:
-        return [(os.path.join('/etc', __name__), [os.path.join('twms', 'twms.conf')])]
+        return [(os.path.join('etc', __name__), [os.path.join('twms', 'twms.conf')])]
     else:
         return []
 
